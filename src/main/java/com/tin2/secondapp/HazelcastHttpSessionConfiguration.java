@@ -42,6 +42,7 @@ public class HazelcastHttpSessionConfiguration {
                 new MapIndexConfig( HazelcastSessionRepository.PRINCIPAL_NAME_ATTRIBUTE, false ) );
 
         config.getNetworkConfig().setPublicAddress( publicAddress );
+        config.getNetworkConfig().setPortAutoIncrement(false);
         config.getNetworkConfig().setPort( port );
         config.getNetworkConfig().setPortCount( portCount );
 

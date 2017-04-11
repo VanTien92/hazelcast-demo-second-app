@@ -52,7 +52,7 @@ public class HomeController {
                 }
             }
         }
-        return "redirect: /firstapp/login";
+        return "login";
     }
 
     @RequestMapping( value = "/", method = RequestMethod.GET )

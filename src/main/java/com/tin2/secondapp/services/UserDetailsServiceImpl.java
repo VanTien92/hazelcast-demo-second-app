@@ -19,6 +19,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         grantedAuthorities.add(new SimpleGrantedAuthority("Admin"));
-        return new org.springframework.security.core.userdetails.User("admin", "123456", grantedAuthorities);
+        return new org.springframework.security.core.userdetails.User("user.tenant.01", "123456", grantedAuthorities);
     }
 }
