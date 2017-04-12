@@ -25,12 +25,10 @@
 </head>
 <body>
 <div class="container">
+    <h2>User: <strong>${user}</strong></h2>
     <c:forEach var="message" items="${messages}">
         <p>${message}</p>
     </c:forEach>
-    <c:if test="${pageContext.request.userPrincipal.name != null}">
-        <h2>User: <strong>${pageContext.request.userPrincipal.name}</strong></h2>
-    </c:if>
 </div>
 <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
