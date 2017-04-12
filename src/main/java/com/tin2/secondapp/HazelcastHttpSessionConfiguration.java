@@ -48,5 +48,4 @@ public class HazelcastHttpSessionConfiguration {
 
         return Hazelcast.newHazelcastInstance( config );
     }
-
 }
